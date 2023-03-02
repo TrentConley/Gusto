@@ -3,15 +3,24 @@ import React, { useState } from "react";
 const searchImage = "/search-icon.png";
 
 type SearchBarProps = {
-  onSearch: (query: string) => void;
+  // Define an onSearch prop type that accepts a search query string and returns void
+  onSearch?: (query: string) => void;
 };
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const [query, setQuery] = useState("");
+  const [searchResults, setSearchResults] = useState<string[]>([]);
+
+  const search = (query: string) => {
+    // Do the search operation here and set the search results in the state
+    const results = ["Result 1", "Result 2", "Result 3"]; // Sample search results
+    setSearchResults(results);
+  };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    onSearch(query);
+    search(query); // Call the search function with the entered query
+    setQuery(""); // Clear the input field
   };
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -32,6 +41,13 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
           <img src={searchImage} className="h-4 w-4" />
         </button>
       </form>
+      {searchResults.length > 0 && (
+        <div>
+          {searchResults.map((result, index) => (
+            <p key={index}>{result}</p>
+          ))}
+        </div>
+      )}
       <h1>Hello 2</h1>
     </div>
   );

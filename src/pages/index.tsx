@@ -12,11 +12,7 @@ function Page() {
           <div className="text-black text-8xl font-bold">Engineer</div>
         </div>
       </div> */}
-      <SearchBar
-        onSearch={function (query: string): void {
-          throw new Error("Function not implemented.");
-        }}
-      />
+      <SearchBar />
     </>
   );
 }
