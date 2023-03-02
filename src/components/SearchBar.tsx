@@ -29,7 +29,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
           className="w-full bg-gray-200 px-4 py-2 rounded-md"
         />
         <button type="submit">
-          <img src={searchImage} alt="Search icon" />
+          <img src={searchImage} className="h-4 w-4" />
         </button>
       </form>
       <h1>Hello 2</h1>
