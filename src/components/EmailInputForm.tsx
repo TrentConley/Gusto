@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "tailwindcss/tailwind.css";
 
 const EmailInputForm = () => {
   const [email, setEmail] = useState("");
@@ -8,6 +7,7 @@ const EmailInputForm = () => {
     event.preventDefault();
     console.log(`Submitting email: ${email}`);
     // You can add code here to send the email to a server or perform other actions
+    setEmail(""); // Clear the email input field
   };
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

@@ -39,7 +39,7 @@ const Header: React.FC = ({}) => {
                   state == 2 ? "text-blue-500" : "text-gray-500"
                 } font-bold rounded-full px-4 py-2 transition-colors duration-300 ease-in-out`}
               >
-                Browse Projects
+                Sign up
               </button>
             </Link>
             <Link href="/create-new-project" passHref>
@@ -51,7 +51,7 @@ const Header: React.FC = ({}) => {
                   state == 3 ? "text-blue-500" : "text-gray-500"
                 } font-bold rounded-full px-4 py-2 transition-colors duration-300 ease-in-out`}
               >
-                Create New Project
+                View Product
               </button>
             </Link>
             <Link href="/get-worker-nft" passHref>
@@ -63,7 +63,7 @@ const Header: React.FC = ({}) => {
                   state == 4 ? "text-blue-500" : "text-gray-500"
                 } font-bold rounded-full px-4 py-2 transition-colors duration-300 ease-in-out`}
               >
-                Get Worker NFT
+                The Team
               </button>
             </Link>
           </div>

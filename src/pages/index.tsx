@@ -2,6 +2,7 @@ import SearchBar from "@/components/SearchBar";
 import React from "react";
 import TopBar from "../components/TopBar";
 import Header from "../components/Header";
+import EmailInputForm from "../components/EmailInputForm";
 
 function Page() {
   return (
@@ -21,13 +22,9 @@ function Page() {
         <div className="flex justify-center items-center h-screen">
           <div className="text-center">
             <h1 className="text-8xl font-bold mb-40">Sign up here</h1>
+            <EmailInputForm />
           </div>
         </div>
-        <SearchBar
-          onSearch={function (query: string): void {
-            throw new Error("Function not implemented.");
-          }}
-        />
       </div>
     </>
   );
