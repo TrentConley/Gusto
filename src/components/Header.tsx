@@ -6,7 +6,10 @@ const Header: React.FC = ({}) => {
   const [state, setState] = useState<number>(0);
 
   return (
-    <div className="bg-white border-b-2 border-gray w-screen rounded-b-md flex">
+    <div
+      className="border-gray w-screen rounded-b-md flex"
+      style={{ background: "#03FDFC" }}
+    >
       <div className="">
         <Link href="/" passHref>
           <img src="/logo.png" alt="" className="object-contain h-20 w-40" />
