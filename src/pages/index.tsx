@@ -6,7 +6,7 @@ import Header from "../components/Header";
 function Page() {
   return (
     <>
-      <header />
+      <Header />
       {/* <TopBar />
       <div className="flex justify-center items-center h-screen bg-white">
         <div className="flex justify-between w-full px-10 mb-40">
