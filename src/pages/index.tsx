@@ -1,10 +1,12 @@
 import SearchBar from "@/components/SearchBar";
 import React from "react";
 import TopBar from "../components/TopBar";
+import Header from "../components/Header";
 
 function Page() {
   return (
     <>
+      <header />
       {/* <TopBar />
       <div className="flex justify-center items-center h-screen bg-white">
         <div className="flex justify-between w-full px-10 mb-40">
@@ -12,7 +14,11 @@ function Page() {
           <div className="text-black text-8xl font-bold">Engineer</div>
         </div>
       </div> */}
-      <SearchBar />
+      <SearchBar
+        onSearch={function (query: string): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
     </>
   );
 }
