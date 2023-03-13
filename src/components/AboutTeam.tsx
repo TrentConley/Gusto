@@ -10,7 +10,7 @@ const teamMembers = [
   },
   {
     name: "Bryce Pardo",
-    bio: "Bryce is a buisnessman.",
+    bio: "Trent is a passionate dev and entreprenuer",
     image: "/trent.png",
     page: "https://www.linkedin.com/in/trent-conley/",
   },
@@ -19,8 +19,8 @@ const teamMembers = [
 const About = () => {
   return (
     <div className="animate-fadeIn scroll-smooth">
-      <div className="flex flex-col items-center justify-center space-y-10 py-10 h-screen">
-        <h1 className="text-4xl font-bold">About the Team</h1>
+      <div className="flex flex-col items-center text-center justify-center space-y-10 py-10 h-screen">
+        <h1 className="text-4xl text-center font-bold">About the Team</h1>
         <div className="flex flex-wrap items-center justify-center space-x-10">
           {teamMembers.map((teamMember, index) => (
             <div

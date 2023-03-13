@@ -1,8 +1,8 @@
 import SearchBar from "@/components/SearchBar";
 import React from "react";
-import TopBar from "../components/TopBar";
 import Header from "../components/Header";
 import EmailInputForm from "../components/EmailInputForm";
+import AboutTeam from "@/components/AboutTeam";
 
 function Page() {
   return (
@@ -25,6 +25,7 @@ function Page() {
             <EmailInputForm />
           </div>
         </div>
+        <AboutTeam />
       </div>
     </>
   );
