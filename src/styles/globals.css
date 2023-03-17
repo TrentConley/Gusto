@@ -1,21 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.animate-fade-in-color {
+  animation: fade-in 3s ease-out;
+  color: black;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
+    color: #eee;
   }
   to {
     opacity: 1;
+    color: black;
   }
-}
-
-.animate-fade-in-color {
-  animation: fade-in 1s ease-out;
-  color: transparent;
-  transition: color 1s ease-out;
-}
-
-.animate-fade-in-color {
-  color: #ff8c84;
 }
