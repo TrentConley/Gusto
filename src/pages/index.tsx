@@ -9,12 +9,15 @@ function Page() {
     <>
       <div className="h-2screen" style={{ background: "#FFC0B4" }}>
         <Header />
-        <div
-          className="flex justify-center text-center h-screen"
-          style={{ background: "linear-gradient(to bottom, #03FDFC, #FFC0B4)" }}
-        >
-          <div className="flex justify-center items-center w-full px-10 mb-40">
-            <h1 className="text-8xl font-bold mb-40 mt-20">
+        <div className="h-screen relative overflow-hidden">
+          <div
+            className="absolute top-0 left-0 w-full h-full bg-fixed bg-center bg-cover"
+            style={{
+              backgroundImage: `url("https://media.istockphoto.com/id/476098860/vector/wonderful-morning-in-the-blue-mountains.jpg?s=612x612&w=0&k=20&c=0nuLvsWKXPReu01RvbXTKIwlUYxOQvoXD_qVBrsapxc=")`,
+            }}
+          ></div>
+          <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+            <h1 className="text-8xl font-bold mb-40 mt-20 text-center px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
               Welcome to Gusto, your gateway to food.
             </h1>
           </div>
