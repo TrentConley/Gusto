@@ -17,7 +17,7 @@ function Page() {
             }}
           ></div>
           <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-            <h1 className="text-8xl font-bold mb-40 mt-20 text-center px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-40 mt-20 text-center font-bold mb-40 mt-20 text-center px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
               Welcome to Gusto, your gateway to food.
             </h1>
           </div>
