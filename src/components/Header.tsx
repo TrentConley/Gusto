@@ -8,7 +8,7 @@ const Header: React.FC = ({}) => {
   return (
     <div
       className="border-gray w-screen rounded-b-md flex"
-      style={{ background: "#03FDFC" }}
+      style={{ background: "#FBFCF8" }}
     >
       <div className="">
         <Link href="/" passHref>

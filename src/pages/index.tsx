@@ -7,7 +7,7 @@ import AboutTeam from "@/components/AboutTeam";
 function Page() {
   return (
     <>
-      <div className="h-2screen" style={{ background: "#FFC0B4" }}>
+      <div className="h-2screen" style={{ background: "#9EC4E0" }}>
         <Header />
         <div className="h-screen relative overflow-hidden">
           <div
